@@ -1,0 +1,386 @@
+
+main{
+     width: 100%;
+}
+
+.a-section{
+     width: 100%;
+     padding: toRem(50) 0;
+
+     .a-section-inner{
+          width: 90%;
+          max-width: toRem(1300);
+          margin: 0 auto;
+     }
+
+     &.company-details-container{
+          padding-top: toRem(150);
+          padding-bottom: 0;
+     }
+
+     @media (min-width: 48em) {
+          padding: toRem(100) 0;
+     }
+}
+
+.service-steps{
+     width: 100%;
+     display: grid;
+     grid-auto-rows: 1fr;
+     
+     .a-step{
+          display: grid;     
+          grid-template-columns: auto 1fr;
+          column-gap: toRem(25);
+
+          .step-num-container{
+
+               .step-num{
+                    width: toRem(45);
+                    height: toRem(45);
+
+                    background: $trc-orange;
+                    border-radius: 50%;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+               }
+          }
+
+          .step-data{
+               .step-heading{
+                    margin-bottom: toRem(10);
+               }
+               .step-description{
+                    padding-bottom: toRem(10);
+               };
+          }
+     }   
+     
+     @media (min-width: 48em) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: toRem(20);
+     }
+     
+     @media (min-width: 64em){
+          grid-template-columns: repeat(4, 1fr);
+          gap: toRem(20);
+
+          .a-step{
+               grid-template-columns: 1fr;
+               grid-template-rows: auto 1fr;
+               gap: toRem(20);
+               justify-items: center;
+
+               .step-num-container{
+                    .step-num{
+                         width: toRem(65);
+                         height: toRem(65);
+                    }
+               }
+
+               .step-data{
+                    .step-heading, .step-description{
+                         text-align: center;
+                    }
+               }
+          }
+     }
+}
+
+.products{
+     .product-card{
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          gap: toRem(20);
+          align-items: center;
+
+          margin-bottom: toRem(40);
+          
+          .product-img, .product-data{
+               grid-column: span 12;
+               
+               img{
+                    width: 100%;
+               }
+          }
+          
+          @media (min-width: 31.25em) {
+               
+               .product-img, .product-data{
+                    grid-column: span 6;
+               }
+
+               &:nth-of-type(even){
+                    .product-data{
+                         grid-row-start: 1;
+                    }
+               }
+          }
+     }
+}
+
+.counters{
+     display: grid;
+     grid-template: auto / repeat(2, 1fr);
+     gap: toRem(40);
+
+     margin-bottom: toRem(80);
+
+     .a-counter{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          h1{
+               font-size: toRem(50);
+          }
+          h1, p{
+               text-align: center;
+          }
+     }
+
+     @media (min-width: 64em) {
+          grid-template: auto / repeat(4, 1fr);
+     }
+}
+
+.logos-container{
+     width: 100%;
+     max-width: toRem(1024);
+     margin: auto;
+
+     display: grid;
+     grid-template: auto / 1fr;
+     gap: toRem(40);
+
+     .a-logo{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          
+          img{
+               width: 100%;
+               max-width: toRem(460);
+          }
+     }
+
+     .line-break{
+          width: 100%;
+          height: toRem(1);
+          background: #f0f0f0;
+     }
+
+     @media (min-width: 48em) {
+          grid-template: auto / repeat(2, 1fr);
+          gap: toRem(100);
+     }
+}
+
+.map-container{
+     width: 100%;
+
+     iframe{
+          width: 100%;
+          height: toRem(450);
+          border: 0;
+     }
+}
+
+.image-gallery{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: toRem(20);
+
+     .image{
+          grid-column: span 12;
+          
+          img{
+               border-radius: toRem(5);
+               width: 100%;
+          }
+
+          @media (min-width: 37.5em) {
+               grid-column: span 6;
+          }
+          @media (min-width: 48em) {
+               grid-column: span 4;
+          }
+     }
+}
+
+.features-section{
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: toRem(20);
+
+     .a-feature{
+          grid-column: span 12;
+          
+          img{
+               width: 100%;
+          }
+
+          @media (min-width: 31.253m) {
+               grid-column: span 6;
+          }
+          @media (min-width: 48em) {
+               grid-column: span 4;
+          }
+     }
+}
+
+.advantages-container{
+     width: 100%;
+
+     display: grid;
+     gap: toRem(40) toRem(20);
+     grid-template: auto / repeat(2, 1fr);
+
+     @media (min-width: 550px) {
+          grid-template: auto / repeat(3, 1fr);
+     }
+
+     .advantage{
+          width: 100%;
+          color: black;
+
+          display: grid;
+          grid-template-rows: repeat(3, auto);
+          row-gap: 20px;
+          justify-items: center;
+          align-content: start;
+
+          .icon-container{
+               width: toRem(100);
+               height: toRem(100);
+               background-color: lighten($trc-orange, 25%);
+               border-radius: 50%;
+
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               img{
+                    width: 50%;
+               }
+          }
+          h3{
+               text-align: center;
+          }
+          p{
+               display: none;
+               text-align: center;
+
+               &.disp-none-on-sm{
+                    display: none;
+               }
+
+               @media (min-width: 768px) {
+                    &.disp-on-med{
+                         display: block;
+                    }
+               }
+          }
+     }
+}
+
+.company-details{
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     gap: toRem(20);
+     align-items: center;
+
+     .company-address, .img-container{
+          grid-column: span 12;
+     }
+
+     .company-address{
+          ul{
+               li{
+                    display: grid;
+                    grid-template: auto / minmax(toRem(16), auto) 1fr;
+                    gap: toRem(25) toRem(20);
+
+                    a{
+                       color: $black;
+                       text-decoration: none;
+
+                       &:hover{
+                            text-decoration: underline;
+                       }
+                    }
+               }
+          }
+     }
+
+     .img-container{
+          img{
+               width: 100%;
+          };
+     }
+
+     @media (min-width: 48em) {
+          .company-address, .img-container{
+               grid-column: span 6;
+          }
+     }
+}
+
+.section-with-cta{
+     width: 100%;
+     background: $trc-lightgrey;
+
+     .section-with-cta-inner{
+          width: 90%;
+          max-width: toRem(1300);
+          margin: 0 auto;
+          padding: toRem(100) 0;
+
+          display: grid;
+          grid-template: auto / 1fr;
+          align-items: center;
+
+          h1{
+               font-size: toRem(44);
+               color: $white;
+               text-shadow: toRem(3) toRem(3) $black;
+               margin-bottom: toRem(25);
+          }
+          
+          p{
+               color: $white;
+               margin-bottom: toRem(25);
+          }
+
+          h1, p{
+               text-align: center;
+          }
+          
+          @media (min-width: 768px) {
+               padding: toRem(50) 0;
+               
+               grid-template-columns: repeat(12, 1fr);
+               gap: toRem(20);
+               
+               .text-section{
+                    grid-column: span 8;
+                    h1, p{
+                         text-align: left;
+                    }
+                    p{
+                         margin: 0;
+                    }
+               }
+               .cta{
+                    margin: 0;
+                    grid-column: span 4;
+                    align-self: end;
+               }
+          }
+     }
+}

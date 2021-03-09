@@ -1,0 +1,19 @@
+
+.section-title{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     margin-bottom: toRem(40);
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     .underline{
+          width: toRem(50);
+          height: toRem(2);
+          background: $trc-orange;
+
+          margin-top: toRem(5);
+     }
+}

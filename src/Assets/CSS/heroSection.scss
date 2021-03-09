@@ -1,0 +1,20 @@
+
+.hero-section{
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+
+     .hero-section-inner{
+          width: 100%;
+          background: rgba(0, 0, 0, 0.2);
+          
+          .hero-content{
+               width: 90%;
+               height: 50vh;
+               
+               margin: 0 auto;
+               padding-top: toRem(70);
+          }
+     }
+}

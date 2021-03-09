@@ -1,0 +1,181 @@
+          
+// Mobile  - width 80%
+// Tablets - % most likely?
+// Desktop - Max-Width: 1300px
+header{
+     width: 100%;
+     position: fixed;
+     background: $trc-grey;
+     
+     &.hide-nav{
+          transform: translateY(toRem(-70));
+          transition: .5s ease;
+     }
+     &.show-nav{
+          transform: translateY(0);
+          transition: .5s ease;
+     }
+
+
+     .header-inner{
+          width: 90%;
+          max-width: toRem(1300);
+          height: toRem(70);
+          margin: auto;
+
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .logo{
+               h1{
+                    color: white;
+               }
+          }
+
+          .hamburger{
+               width: toRem(20);
+               height: toRem(18);
+               background: transparent;
+
+               position: relative;
+               z-index: 9999999999999;
+
+               
+               .line{
+                    width: 100%;
+                    height: toRem(2);
+                    background: $white;
+                    border-radius: 100px;
+                    position: absolute;
+
+                    &:nth-of-type(1){
+                         top: 0;
+                         left: 0;
+
+                         &.moveDownRotate{
+                              animation: moveDownRotate .5s ease forwards;
+                         }
+                         &.moveDownRotateReverse{
+                              animation: moveDownRotateReverse .5s ease forwards
+                         }
+
+                         @keyframes moveDownRotate{
+                              0%{
+                                   //starting state
+                                   transform: translateY(0%) rotate(0);
+                              }
+                              40%, 60%{
+                                   // meet in the middle
+                                   transform: translateY(toRem(8)) rotate(0);
+                              }
+                              100%{
+                                   //final state
+                                   transform: translateY(toRem(8)) rotate(45deg);
+                              }
+                         }
+                         @keyframes moveDownRotateReverse {
+                              0%{
+                                   //starting state
+                                   transform: translateY(toRem(8)) rotate(45deg);
+                              }
+                              40%, 60%{
+                                   // meet in the middle
+                                   transform: translateY(toRem(8)) rotate(0);
+                              }
+                              100%{
+                                   //final state
+                                   transform: translateY(0) rotate(0);
+                              }
+                         }
+                    }
+                    &:nth-of-type(2){
+                         top: 50%;
+                         left: 0;
+                         transform: translateY(-50%);
+
+                         &.show{
+                              visibility: visible;
+                              transition: .25s .25s ease;
+                         }
+
+                         &.hide{
+                              visibility: hidden;
+                              transition-delay: .25s;
+                         }
+                    }
+                    &:nth-of-type(3){
+                         bottom: 0;
+                         left: 0;
+
+                         &.moveUpRotate{
+                              animation: moveUpRotate .5s ease forwards;
+                         }
+                         &.moveUpRotateReverse{
+                              animation: moveUpRotateReverse .5s ease forwards
+                         }
+
+                         @keyframes moveUpRotate{
+                              0%{
+                                   //starting state
+                                   transform: translateY(0) rotate(0);
+                              }
+                              40%, 60%{
+                                   // meet in the middle
+                                   transform: translateY(toRem(-8)) rotate(0);
+                              }
+                              100%{
+                                   //final state & stop
+                                   transform: translateY(toRem(-8)) rotate(-45deg);
+                              }
+                         }
+                         @keyframes moveUpRotateReverse{
+                              0%{
+                                   //starting state
+                                   transform: translateY(toRem(-8)) rotate(-45deg);
+                              }
+                              40%, 60%{
+                                   // meet in the middle
+                                   transform: translateY(toRem(-8)) rotate(0);
+                              }
+                              100%{
+                                   //final state & stop
+                                   transform: translateY(0) rotate(0);
+                              }
+                         }
+                    }
+               }
+               
+               .hamburger-bkg{
+                    width: toRem(50);
+                    height: toRem(50);
+                    
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    
+                    background: transparent;
+                    transition: .5s ease;
+
+                    border-radius: 50%;
+               }
+               
+
+               &:hover{
+                    cursor: pointer;
+
+                    .hamburger-bkg{
+                         background: lighten($trc-grey, 10%);
+                    }
+               }
+          }
+
+          @media (min-width: 768px) {
+               .hamburger{
+                    display: none;
+               }
+          }
+     }
+}

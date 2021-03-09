@@ -1,0 +1,90 @@
+
+$trc-grey: #282841;
+$trc-lightgrey: #363654;
+$trc-orange: #ffa32c;
+$trc-darkorange: #703400;
+$white: #ffffff;
+$black: #000000;
+
+@function toRem($px){
+     @return (0.0625rem * $px);
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI',  sans-serif;
+}
+
+ul{
+     list-style-type: none;
+}
+
+.h1-text{
+     font-size: toRem(40);
+
+     @media (min-width: 26.5625em) {
+          font-size: toRem(60);
+     }
+}
+.h2-text{
+     font-size: toRem(30);
+}
+.h3-text{
+     font-size: toRem(22);
+}
+
+.p-text{
+     font-size: toRem(16);  
+}
+.p-hero-text{
+     font-size: toRem(18);
+}
+.products-hero-text{
+     font-size: toRem(25);
+     font-weight: bold;
+}
+
+.round-border{
+     border-radius: toRem(5);
+}
+
+.flex-column-center-xy{
+     display: flex;
+     flex-direction: column;
+     justify-content: center; 
+     align-items: center;
+}
+
+.text-align-center{
+     text-align: center;
+}
+
+.white-text{
+     color: $white;
+}
+
+.margin-bottom-70{
+     margin-bottom: toRem(70);
+}
+.margin-bottom-40{
+     margin-bottom: toRem(40);
+}
+.margin-bottom-20{
+     margin-bottom: toRem(20);
+}
+.margin-bottom-10{
+     margin-bottom: toRem(10);
+}
+
+
+
+@import './gridOverlay.scss';
+@import './cta.scss';
+@import './sectionTitle.scss';
+@import './heroSection.scss';
+@import './sideNav.scss';
+@import './menu.scss';
+@import './footer.scss';
+@import './main.scss';
+@import './header.scss';
