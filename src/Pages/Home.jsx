@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CountUp from 'react-countup';
 
 import Layout from '../Templates/Layout';
@@ -16,7 +16,11 @@ import TimeIcon from '../Assets/Images/Icons/Time Saving.svg';
 import WeatherIcon from '../Assets/Images/Icons/Weather Resistant.svg';
 
 function Home(props) {
-     
+     useEffect(() => {
+          window.scrollTo(0, 0);
+          return null;
+     }, []);
+
      const features = [
           { img: Profile, imgAlt: "", heading: "International Brands", description: "We carry window solutions from global industry leaders like Kommerling & Veka, to bring you custom solutions specially designed for local conditions in Pakistan." },
 
@@ -61,9 +65,9 @@ function Home(props) {
                          <section className="a-section-inner">
                               <section className="features-section">
                                    {
-                                        features.map((aFeature) => {
+                                        features.map((aFeature, index) => {
                                              return (
-                                                  <FeatureCard key={aFeature.heading} img={aFeature.img} imgAlt={aFeature.imgAlt} heading={aFeature.heading} description={aFeature.description} />
+                                                  <FeatureCard key={index} img={aFeature.img} imgAlt={aFeature.imgAlt} heading={aFeature.heading} description={aFeature.description} />
                                              )
                                         })
                                    }

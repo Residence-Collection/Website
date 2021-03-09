@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Layout from '../Templates/Layout';
 import { Main, SectionTitle } from '../Components';
 import { waitForElementToBeRemoved } from '@testing-library/react';
 
-function Home(props) {
+function Contact(props) {
+
+     useEffect(() => {
+          window.scrollTo(0, 0);
+          return null;
+     }, []);
+
      return (
           <Layout>
                <Main>
@@ -17,7 +23,7 @@ function Home(props) {
                               <section className="company-details margin-bottom-40">
                                    <address className="company-address">
                                         <ul>
-                                             <li  className="p-text margin-bottom-20">
+                                             <li className="p-text margin-bottom-20">
                                                   <span>
                                                        <i className="fas fa-map-marker-alt"></i>
                                                   </span>
@@ -57,7 +63,7 @@ function Home(props) {
                          </div>
 
                          <section className="map-container">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.8734882287447!2d74.42667598270751!3d31.503637959459763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f40f5b0b691%3A0x8396e83b27539c0!2sBlock%20A%20DHA%20Phase%208%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1614630126832!5m2!1sen!2sus" allowfullscreen="true" loading="lazy" style={{ background: "#b8b8b8", display: "block" }}></iframe>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1700.8734882287447!2d74.42667598270751!3d31.503637959459763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f40f5b0b691%3A0x8396e83b27539c0!2sBlock%20A%20DHA%20Phase%208%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1614630126832!5m2!1sen!2sus" allowFullScreen={true} loading="lazy" style={{ background: "#b8b8b8", display: "block" }}></iframe>
                          </section>
                     </section>
 
@@ -67,4 +73,4 @@ function Home(props) {
           </Layout>
      );
 }
-export default Home;
+export default Contact;

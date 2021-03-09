@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import {ReactComponent as TRCLogo} from '../Assets/Images/TRC-Logo.svg';
 
 function Footer(props) {
@@ -49,13 +51,13 @@ function Footer(props) {
                                    <nav>
                                         <ul>
                                              <li className="margin-bottom-20">
-                                                  <a href="/" className="white-text">Home</a>
+                                                  <Link to="/" className="white-text">Home</Link>
                                              </li>
                                              <li className="margin-bottom-20">
-                                                  <a href="/products_services" className="white-text">Products & Services</a>
+                                                  <Link to="/products_services" className="white-text">Products & Services</Link>
                                              </li>
                                              <li className="margin-bottom-20">
-                                                  <a href="/contact" className="white-text">Contact</a>
+                                                  <Link to="/contact" className="white-text">Contact</Link>
                                              </li>
                                         </ul>
                                    </nav>

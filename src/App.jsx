@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import { Home, Products_Services, Contact } from "./Pages";
@@ -14,8 +14,8 @@ function App() {
         {/* <GridOverlay /> */}
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="#/products_services" component={Products_Services} />
-          <Route path="#/contact" component={Contact} />
+          <Route path="/products_services" component={Products_Services} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
     </Router>

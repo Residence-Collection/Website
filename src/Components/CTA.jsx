@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CTA({text, to}){
      return(
-          <a href={to} className="cta p-text">{text}</a>
+          <Link to={to} className="cta p-text">{text}</Link>
      );
 }
 export default CTA;
