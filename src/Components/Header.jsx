@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import Logo from '../Components/Logo';
 import Navigation from '../Components/Navigation';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
@@ -58,9 +59,9 @@ function Header(props) {
      return (
           <header className={(toggleNav == null) ? "" : (toggleNav === true) ? "show-nav" : "hide-nav"}>
                <div className="header-inner">
-                    {/* <div className="logo"> */}
+                    <Link to="/">
                          <TRCLogo style={{width:"120px"}} />
-                    {/* </div> */}
+                    </Link>
 
                     <div className="hamburger" onClick={() => handleOnClick()}>
 

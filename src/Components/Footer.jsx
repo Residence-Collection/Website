@@ -8,7 +8,9 @@ function Footer(props) {
           <footer>
                <div className="inner">
                     <section className="address-container">
-                         <TRCLogo style={{width:"120px", marginBottom:"20px"}}/>
+                         <Link to="/">
+                              <TRCLogo style={{width:"120px", marginBottom:"20px"}}/>
+                         </Link>
                          <address>
                               <ul className="white-text">
                                    <li className="margin-bottom-20">
