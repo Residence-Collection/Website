@@ -11,7 +11,9 @@ function SectionWithCTA({h1_text, p_text, cta_text, cta_link}) {
                          <p>{p_text}</p>
                     </section>
 
-                    <CTA text={cta_text} to={cta_link} />
+                    <div style={{gridColumn: "span 4", alignSelf: "end", justifySelf: "center"}}>
+                         <CTA text={cta_text} to={cta_link} />
+                    </div>
                </div>
           </section>
      );

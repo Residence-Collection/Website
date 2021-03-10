@@ -60,7 +60,7 @@ function Products_Services(props) {
                     </section>
                </Main>
 
-               <SectionWithCTA h1_text={`Interested in Collaborating?`} p_text="We lay great emphasis on personal commitment, comprehensive workmanship &#x26; your satisfaction." cta_text="Lets Talk!" cta_link="/Contact" />
+               <SectionWithCTA h1_text={`Interested in our Services?`} p_text="We lay great emphasis on personal commitment, comprehensive workmanship &#x26; your satisfaction." cta_text="Lets Talk!" cta_link="/Contact" />
           </Layout>
      );
 }

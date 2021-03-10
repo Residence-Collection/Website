@@ -3,7 +3,9 @@ import React from 'react'
 function FeatureCard({ img, imgAlt, heading, description }) {
      return (
           <div className="a-feature">
-               <img src={img} alt="" className="round-border"/>
+               <div className="a-feature-img round-border">
+                    <img src={img} alt=""/>
+               </div>
 
                <div>
                     <h3 className="h3-text">{heading}</h3>

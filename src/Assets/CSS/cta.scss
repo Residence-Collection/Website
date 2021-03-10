@@ -2,7 +2,7 @@
 .cta{
      display: inline-block;
      margin: 0 auto toRem(20) auto;
-     padding: toRem(15) toRem(100);
+     padding: toRem(10) toRem(25);
 
      background: $trc-orange;
      color: $black;
@@ -10,14 +10,5 @@
 
      border-radius: toRem(5);
 
-     &:hover{
-          background: darken($trc-orange, 5%);
-     }
-     &:active{
-          background: darken($trc-orange, 5%);
-          box-shadow: 0 toRem(3) $trc-darkorange;
-          transform: translateY(toRem(3));
-     }
-
-
+     text-decoration: none;
 }

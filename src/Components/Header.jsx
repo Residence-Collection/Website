@@ -7,30 +7,7 @@ import { ReactComponent as TRCLogo } from '../Assets/Images/TRC-Logo.svg';
 
 function Header(props) {
 
-     const [toggleNav, setToggleNav] = useState(true)
      const [hamburgerClicked, setHamburgerClicked] = useState(null);
-
-     useEffect(() => {
-
-          let prevScrollTop = 0;
-          let currScrollTop = window.pageYOffset;
-
-          function toggleNavOnScroll() {
-
-               prevScrollTop = currScrollTop;
-               currScrollTop = window.pageYOffset;
-
-               if (prevScrollTop < currScrollTop)
-                    setToggleNav(false);
-               else
-                    setToggleNav(true);
-          }
-
-          window.addEventListener('scroll', toggleNavOnScroll)
-
-          return () => window.removeEventListener('scroll', toggleNavOnScroll);
-     }, [])
-
 
      function handleOnClick() {
 
@@ -57,7 +34,7 @@ function Header(props) {
      }, [])
 
      return (
-          <header className={(toggleNav == null) ? "" : (toggleNav === true) ? "show-nav" : "hide-nav"}>
+          <header >
                <div className="header-inner">
                     <Link to="/">
                          <TRCLogo style={{width:"120px"}} />
