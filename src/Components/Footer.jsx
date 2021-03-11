@@ -66,7 +66,7 @@ function Footer(props) {
                                    
                               </div>
                               
-                              <div>
+                              {/* <div>
                                    <h4 className="white-text margin-bottom-20">FOLLOW US</h4>
                                    <ul>
                                         <li className="margin-bottom-20">
@@ -79,7 +79,7 @@ function Footer(props) {
                                              <a rel="noopener noreferrer" href="https://www.twitter.com" target="_blank" className="white-text">Twitter</a>
                                         </li>
                                    </ul>
-                              </div>
+                              </div> */}
                     </section>
                </div>
           </footer>
