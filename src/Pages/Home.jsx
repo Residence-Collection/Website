@@ -59,7 +59,7 @@ function Home(props) {
      return (
           <Layout>
                <Main>
-                    <HeroSection heading="The Residence Collection" subHeading="We are the No. 1 UPVC Windows & Doors solution provider in Pakistan." ctaText="See Our Products & Services" img="hero" />
+                    <HeroSection heading="The Residence Collection" subHeading="UPVC Windows & Doors solution provider in Pakistan." ctaText="See Our Products & Services" img="hero" />
 
                     <section className="a-section">
                          <section className="a-section-inner">

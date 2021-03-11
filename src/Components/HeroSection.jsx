@@ -10,7 +10,7 @@ function HeroSection({ heading, subHeading, ctaText, img}) {
           <section className="hero-section" style={(img === "hero") ? {backgroundImage: `url(${Hero})`} : {backgroundImage: `url(${ProductsHero})`}}>
                <div className="hero-section-inner">
                     <section className="hero-content flex-column-center-xy">
-                         <h1 className="h1-text hero-text text-align-center white-text margin-bottom-10">{heading}</h1>
+                         <h1 className="h1-text hero-text text-align-center white-text text-shadow-hero margin-bottom-10">{heading}</h1>
 
                          {(subHeading) ? <p className={(!heading) ? "products-hero-text margin-bottom-20" : "p-hero-text text-align-center white-text margin-bottom-20"}>{subHeading}</p> : null}
 
