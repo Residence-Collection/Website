@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c5d3cb8d.chunk.css",
-    "main.js": "/static/js/main.a3694d7d.chunk.js",
-    "main.js.map": "/static/js/main.a3694d7d.chunk.js.map",
+    "main.js": "/static/js/main.540471ef.chunk.js",
+    "main.js.map": "/static/js/main.540471ef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e67d3ed8.js",
     "runtime-main.js.map": "/static/js/runtime-main.e67d3ed8.js.map",
     "static/js/2.9100e214.chunk.js": "/static/js/2.9100e214.chunk.js",
@@ -20,7 +20,7 @@
     "static/media/adopenLogo.002a63f4.svg": "/static/media/adopenLogo.002a63f4.svg",
     "static/media/casement.8397145e.jpg": "/static/media/casement.8397145e.jpg",
     "static/media/custom-solution.cebef9cb.jpg": "/static/media/custom-solution.cebef9cb.jpg",
-    "static/media/display-center.ee4f04d9.jpg": "/static/media/display-center.ee4f04d9.jpg",
+    "static/media/display-center.83ab614e.jpg": "/static/media/display-center.83ab614e.jpg",
     "static/media/folding.a83a3ea6.jpg": "/static/media/folding.a83a3ea6.jpg",
     "static/media/handle.58679a18.jpg": "/static/media/handle.58679a18.jpg",
     "static/media/hero.d621522d.jpg": "/static/media/hero.d621522d.jpg",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.e67d3ed8.js",
     "static/js/2.9100e214.chunk.js",
     "static/css/main.c5d3cb8d.chunk.css",
-    "static/js/main.a3694d7d.chunk.js"
+    "static/js/main.540471ef.chunk.js"
   ]
 }
