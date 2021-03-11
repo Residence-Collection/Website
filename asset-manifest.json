@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5d3cb8d.chunk.css",
-    "main.js": "/static/js/main.675b270f.chunk.js",
-    "main.js.map": "/static/js/main.675b270f.chunk.js.map",
+    "main.css": "/static/css/main.ea98e08d.chunk.css",
+    "main.js": "/static/js/main.ddda326a.chunk.js",
+    "main.js.map": "/static/js/main.ddda326a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e67d3ed8.js",
     "runtime-main.js.map": "/static/js/runtime-main.e67d3ed8.js.map",
     "static/js/2.9100e214.chunk.js": "/static/js/2.9100e214.chunk.js",
     "static/js/2.9100e214.chunk.js.map": "/static/js/2.9100e214.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c5d3cb8d.chunk.css.map": "/static/css/main.c5d3cb8d.chunk.css.map",
+    "static/css/main.ea98e08d.chunk.css.map": "/static/css/main.ea98e08d.chunk.css.map",
     "static/js/2.9100e214.chunk.js.LICENSE.txt": "/static/js/2.9100e214.chunk.js.LICENSE.txt",
     "static/media/Energy Saving.3b4d92f6.svg": "/static/media/Energy Saving.3b4d92f6.svg",
     "static/media/No Sound.26855714.svg": "/static/media/No Sound.26855714.svg",
     "static/media/Safe and Secure.31cd9506.svg": "/static/media/Safe and Secure.31cd9506.svg",
-    "static/media/TRC-Logo.b92c8054.svg": "/static/media/TRC-Logo.b92c8054.svg",
+    "static/media/TRC-Logo.52c834dd.svg": "/static/media/TRC-Logo.52c834dd.svg",
     "static/media/Thermal Insulation.7f61dae2.svg": "/static/media/Thermal Insulation.7f61dae2.svg",
     "static/media/Time Saving.ce6b6939.svg": "/static/media/Time Saving.ce6b6939.svg",
     "static/media/Weather Resistant.f6919cea.svg": "/static/media/Weather Resistant.f6919cea.svg",
@@ -23,7 +23,7 @@
     "static/media/display-center.83ab614e.jpg": "/static/media/display-center.83ab614e.jpg",
     "static/media/folding.a83a3ea6.jpg": "/static/media/folding.a83a3ea6.jpg",
     "static/media/handle.58679a18.jpg": "/static/media/handle.58679a18.jpg",
-    "static/media/hero.d621522d.jpg": "/static/media/hero.d621522d.jpg",
+    "static/media/hero.c823d6ba.jpg": "/static/media/hero.c823d6ba.jpg",
     "static/media/kommerlingLogo.3b4690af.svg": "/static/media/kommerlingLogo.3b4690af.svg",
     "static/media/products-hero.0a8532f8.jpg": "/static/media/products-hero.0a8532f8.jpg",
     "static/media/profile.a725cdfe.jpg": "/static/media/profile.a725cdfe.jpg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.e67d3ed8.js",
     "static/js/2.9100e214.chunk.js",
-    "static/css/main.c5d3cb8d.chunk.css",
-    "static/js/main.675b270f.chunk.js"
+    "static/css/main.ea98e08d.chunk.css",
+    "static/js/main.ddda326a.chunk.js"
   ]
 }
