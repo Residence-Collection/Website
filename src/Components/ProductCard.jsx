@@ -3,7 +3,7 @@ import React from 'react';
 function ProductCard({img, imgAlt, heading, description}) {
      return (
           <div className="product-card">
-               <div className="product-img">
+               <div className="product-img round-border">
                     <img src={img} alt={imgAlt} className="round-border" />
                </div>
 
