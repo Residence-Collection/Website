@@ -22,7 +22,7 @@ function Home(props) {
      }, []);
 
      const features = [
-          { img: Profile, imgAlt: "", heading: "International Brands", description: "We carry window solutions from global industry leaders like Kommerling & Veka, to bring you custom solutions specially designed for local conditions in Pakistan." },
+          { img: Profile, imgAlt: "", heading: "International Brands", description: "We carry window solutions from global industry leaders like Kommerling, Adopen & Aluplast, to bring you custom solutions specially designed for local conditions in Pakistan." },
 
           { img: Handle, imgAlt: "", heading: "Windows & Doors Hardware", description: "Combine the best in window profiles with the best European and Turkish hardware to suit every architectural style from traditional to contemporary." },
 
@@ -67,7 +67,7 @@ function Home(props) {
                                    {
                                         features.map((aFeature, index) => {
                                              return (
-                                                  <FeatureCard key={index} img={aFeature.img} imgAlt={aFeature.imgAlt} heading={aFeature.heading} description={aFeature.description} />
+                                                  <FeatureCard key={aFeature.heading} img={aFeature.img} imgAlt={aFeature.imgAlt} heading={aFeature.heading} description={aFeature.description} />
                                              )
                                         })
                                    }
@@ -102,7 +102,7 @@ function Home(props) {
                                    {
                                         advantages.map((anAdvantage) => {
                                              return (
-                                                  <AdvantageCard icon={anAdvantage.icon} heading={anAdvantage.heading} description={anAdvantage.description} />
+                                                  <AdvantageCard key={anAdvantage.heading} icon={anAdvantage.icon} heading={anAdvantage.heading} description={anAdvantage.description} />
                                              )
                                         })
                                    }

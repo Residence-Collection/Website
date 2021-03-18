@@ -3,8 +3,9 @@ import React, { useEffect } from 'react';
 import Layout from '../Templates/Layout';
 import { Main, HeroSection, ServiceSteps, SectionTitle, SectionWithCTA, ProductCard } from '../Components';
 
-import AdoLogo from '../Assets/Images/adopenLogo.svg';
-import KommerlingLogo from '../Assets/Images/kommerlingLogo.svg';
+import AdoLogo from '../Assets/Images/adopenLogo.png';
+import KommerlingLogo from '../Assets/Images/kommerlingLogo.jpg';
+import AluplastLogo from '../Assets/Images/aluplastLogo.png';
 
 import Casement from '../Assets/Images/casement.jpg';
 import TiltTurn from '../Assets/Images/tilt-turn.jpg';
@@ -23,7 +24,9 @@ function Products_Services(props) {
                <Main>
                     <section id="products" className="a-section">
                          <div className="a-section-inner">
-                              <SectionTitle text="Our Product Range" />
+                              <div className="product-page-heading">
+                                   <SectionTitle text="Our Product Range" />
+                              </div>
 
                               <section className="products">
                                    <ProductCard img={Casement} imgAlt="Image of a casement window." heading="Casement" description="A window that is permanently mounted into a space, moving inwards and outwards with a mechanical crank. They are used singly or in pairs within a common frame, in which case they are hinged on the outside." />
@@ -46,8 +49,13 @@ function Products_Services(props) {
                                    </div>
 
                                    <div className="a-logo">
+                                        <img src={AluplastLogo} alt="Aluplast Logo" />
+                                   </div>
+
+                                   <div className="a-logo">
                                         <img src={KommerlingLogo} alt="Kommerling Logo" />
                                    </div>
+
                               </div>
                          </div>
                     </section>

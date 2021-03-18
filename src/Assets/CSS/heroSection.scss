@@ -2,9 +2,9 @@
 .hero-section{
      width: 100%;
      background-size: cover;
-     background-position: 70% 80%;
+     background-position-x: 50%;
+     background-position-y: 70%;
      background-repeat: no-repeat;
-     background-attachment: fixed;
 
      .hero-section-inner{
           width: 100%;
@@ -12,7 +12,7 @@
           
           .hero-content{
                width: 90%;
-               height: 75vh;
+               height: 80vh;
                
                margin: 0 auto;
                padding-top: toRem(70);
