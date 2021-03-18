@@ -36,7 +36,7 @@ function Header(props) {
      return (
           <header >
                <div className="header-inner">
-                    <Link to="/" style={{dislay: "flex", alignItems: "center"}}>
+                    <Link to="/" style={{display:"flex", alignItems: "center"}}>
                          <TRCLogo style={{width:"120px"}} />
                     </Link>
 

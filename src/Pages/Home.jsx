@@ -22,7 +22,7 @@ function Home(props) {
      }, []);
 
      const features = [
-          { img: Profile, imgAlt: "", heading: "International Brands", description: "We carry window solutions from global industry leaders like Kommerling, Adopen & Aluplast, to bring you custom solutions specially designed for local conditions in Pakistan." },
+          { img: Profile, imgAlt: "", heading: "International Brands", description: "We carry window solutions from global industry leaders like Kommerling & Aluplast from Germany and Adopen from Turkey, to bring you custom solutions specially designed for local conditions in Pakistan." },
 
           { img: Handle, imgAlt: "", heading: "Windows & Doors Hardware", description: "Combine the best in window profiles with the best European and Turkish hardware to suit every architectural style from traditional to contemporary." },
 
