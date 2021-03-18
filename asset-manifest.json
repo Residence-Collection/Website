@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e11bcec.chunk.css",
-    "main.js": "/static/js/main.48405b85.chunk.js",
-    "main.js.map": "/static/js/main.48405b85.chunk.js.map",
+    "main.css": "/static/css/main.88a0f637.chunk.css",
+    "main.js": "/static/js/main.d35f6b67.chunk.js",
+    "main.js.map": "/static/js/main.d35f6b67.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e67d3ed8.js",
     "runtime-main.js.map": "/static/js/runtime-main.e67d3ed8.js.map",
     "static/js/2.9100e214.chunk.js": "/static/js/2.9100e214.chunk.js",
     "static/js/2.9100e214.chunk.js.map": "/static/js/2.9100e214.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3e11bcec.chunk.css.map": "/static/css/main.3e11bcec.chunk.css.map",
+    "static/css/main.88a0f637.chunk.css.map": "/static/css/main.88a0f637.chunk.css.map",
     "static/js/2.9100e214.chunk.js.LICENSE.txt": "/static/js/2.9100e214.chunk.js.LICENSE.txt",
     "static/media/Energy Saving.3b4d92f6.svg": "/static/media/Energy Saving.3b4d92f6.svg",
     "static/media/No Sound.26855714.svg": "/static/media/No Sound.26855714.svg",
     "static/media/Safe and Secure.31cd9506.svg": "/static/media/Safe and Secure.31cd9506.svg",
-    "static/media/TRC-Logo.52c834dd.svg": "/static/media/TRC-Logo.52c834dd.svg",
+    "static/media/TRC-Logo.82f78c01.svg": "/static/media/TRC-Logo.82f78c01.svg",
     "static/media/Thermal Insulation.7f61dae2.svg": "/static/media/Thermal Insulation.7f61dae2.svg",
     "static/media/Time Saving.ce6b6939.svg": "/static/media/Time Saving.ce6b6939.svg",
     "static/media/Weather Resistant.f6919cea.svg": "/static/media/Weather Resistant.f6919cea.svg",
-    "static/media/adopenLogo.002a63f4.svg": "/static/media/adopenLogo.002a63f4.svg",
+    "static/media/adopenLogo.784993b9.png": "/static/media/adopenLogo.784993b9.png",
     "static/media/casement.8397145e.jpg": "/static/media/casement.8397145e.jpg",
     "static/media/custom-solution.083f091e.jpg": "/static/media/custom-solution.083f091e.jpg",
     "static/media/display-center.83ab614e.jpg": "/static/media/display-center.83ab614e.jpg",
     "static/media/folding.a83a3ea6.jpg": "/static/media/folding.a83a3ea6.jpg",
     "static/media/handle.fb6dec3d.jpg": "/static/media/handle.fb6dec3d.jpg",
     "static/media/hero.801097e5.jpg": "/static/media/hero.801097e5.jpg",
-    "static/media/kommerlingLogo.3b4690af.svg": "/static/media/kommerlingLogo.3b4690af.svg",
+    "static/media/kommerlingLogo.c80d8a1b.jpg": "/static/media/kommerlingLogo.c80d8a1b.jpg",
     "static/media/products-hero.0a8532f8.jpg": "/static/media/products-hero.0a8532f8.jpg",
     "static/media/profile.15bee9e9.jpg": "/static/media/profile.15bee9e9.jpg",
     "static/media/sliding.a8047365.jpg": "/static/media/sliding.a8047365.jpg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.e67d3ed8.js",
     "static/js/2.9100e214.chunk.js",
-    "static/css/main.3e11bcec.chunk.css",
-    "static/js/main.48405b85.chunk.js"
+    "static/css/main.88a0f637.chunk.css",
+    "static/js/main.d35f6b67.chunk.js"
   ]
 }
